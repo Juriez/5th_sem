@@ -1,0 +1,40 @@
+T1: Bread Butter Chips
+T2: Butter Coke
+T3: Butter Sauce
+T4: Bread Butter Coke
+T5: Bread Sauce
+T6: Butter Sauce
+T7: Bread Sauce
+T8: Bread Butter Sauce Chips
+T9: Bread Butter Sauce
+T10: Bread Butter Sauce Coke
+T11: Chips Butter
+T12: Bread Sauce Coke
+T13: Butter Sauce Chips
+T14: Bread Butter
+T15: Bread Sauce Butter
+T16: Sauce Butter
+T17: Bread Butter Sauce Chips
+T18: Bread Butter
+T19: Butter Coke
+T20: Bread Butter Sauce
+T21: Bread Butter Chips
+T22: Butter Sauce
+T23: Bread Butter
+T24: Sauce Coke
+T25: Bread Sauce Butter
+T26: Bread Butter Sauce
+T27: Butter Chips
+T28: Bread Butter Coke
+T29: Butter Sauce
+T30: Bread Sauce Butter
+T31: Bread Butter Sauce
+T32: Butter Chips
+T33: Bread Butter Coke
+T34: Butter Sauce
+T35: Bread Sauce
+T36: Bread Butter Sauce
+T37: Butter Chips
+T38: Bread Butter Coke
+T39: Butter Sauce
+T40: Bread Sauce Butter
