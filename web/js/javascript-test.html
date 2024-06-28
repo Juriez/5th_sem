@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <script src="test.js"></script>
+</head>
+
+<body>
+    <h1>Hello world !!!!</h1>
+    <p id="myParagraph">hello</p>
+    <button onclick="document.write(100+500)">click me</button>
+    <button onclick="window.print()">click to print</button>
+
+    <form name="loginForm" onsubmit="return validate()" action="http://www.test.com">
+        <input type="text" name="username" />
+    </form>
+
+    <script>
+		
+	   // document.getElementById("myParagraph").innerHTML = 10 + 20;
+        // document.write(10 + 30);
+        // window.alert(300 + 400);
+        // console.log(100+500);
+
+        // var x, y;
+        // x=10;
+        // y=20;
+        // document.write(x+y);
+
+        // var str;
+        // str="Hello JavaScript";
+        // alert(str);
+
+        // document.write("Simple " + "JS " + "String");
+        // var temp = 10 + "20" + "30";
+        // alert(temp);
+
+       //  var temp = 10 + 20 + "10"+20 ;
+       //  alert(temp);
+
+        // var x=10, y="10";
+        // if(x===y) {
+        //     alert("values are the same");
+        // } else {
+        //     alert("not the same");
+        // }
+		
+        var person = {
+            firstName: "James",
+            lastName: "Bond",
+            code: 7,
+            printInfo: function () {
+                document.write(this.firstName + " " + this.lastName + " " + this.code);
+            }
+        };
+
+         console.log(person);
+         person.printInfo();
+         console.log(typeof person);
+         var a;
+         console.log(typeof a);
+         a = 10;
+         console.log(typeof a);
+         a = undefined;
+         console.log(typeof a);
+         person = null;
+         console.log(typeof person);
+        // person = undefined;
+        // console.log(typeof person);
+
+         console.log(null == undefined)
+         console.log(null === undefined)
+
+         function add(a, b) {
+             return a + b;
+         }
+         document.write(add(10,20));
+
+         for (var i = 0; i < 10; i++) {
+             document.write("<h1>"+i+"</h1>")
+         }
+
+    </script>
+
+    <script>
+	
+        // "use strict";
+        // x = 10;
+           var x = 10;
+        function print() {
+            "use strict";
+            // a = 10;
+            var a = 10;
+            document.write(a);
+        }
+        print();
+        p = 10;
+		
+
+    </script> 
+
+    <script>
+         var i=5;
+         /*for(var i=0; i<10; i++) {
+             document.write(i);
+         }
+         document.write("   " + i);
+		*/
+		/*
+         for(let i=0; i<10; i++) {
+             document.write(i);
+         }
+         document.write("   " + i);
+		*/
+         /*var persons = ["james", "tom", "allen"];
+         for (let i = 0; i < persons.length; i++) {
+             document.write("<h1>" + persons[i] + "</h1>")
+         }
+		*/
+    </script>
+
+    <script>
+        /*document.getElementById("myParagraph").addEventListener("click", function () {
+            alert("ok !!!");
+        });*/
+       // document.getElementById("myParagraph").addEventListener("click", myFunction);
+        function myFunction() {
+            alert("paragraph clicked");
+        }
+        document.getElementById("myParagraph").onclick = myFunction; 
+    </script>
+
+    <script>
+        function validate(){
+            var fName = document.forms["loginForm"]["username"].value;
+            alert(fName);
+            return true;
+        }
+    </script>
+</body>
+
+</html>

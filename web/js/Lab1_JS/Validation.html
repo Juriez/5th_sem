@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scholarship Application Form</title>
+    <script>
+        function validateForm() {
+            var studentId = document.getElementById("studentId").value;
+            var fullName = document.getElementById("fullName").value;
+            var email = document.getElementById("email").value;
+            var phoneNo = document.getElementById("phoneNo").value;
+            var dob = document.getElementById("dob").value;
+            var cgpa = parseFloat(document.getElementById("cgpa").value);
+
+            // Student ID validation
+            if (!/^20\d{2}-\d{3}-\d{2}$/.test(studentId)) {
+                alert("Invalid Student ID format. Please use format 'YYYY-XXX-XX'.");
+                return false;
+            }
+
+            // Full Name validation
+            if (fullName.length < 6 || fullName.length > 30) {
+                alert("Full Name must be between 6 to 30 characters.");
+                return false;
+            }
+
+            // Email validation
+            if (!/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(email)) {
+                alert("Invalid Email format.");
+                return false;
+            }
+
+            
+           // Phone No. validation
+           if (!/^(\+?8801[23456789]|01[23456789])\d{8}$/.test(phoneNo)) {
+                alert("Invalid Phone Number format.");
+                return false;
+           }
+       
+
+            // Date of Birth validation
+            var dobDate = new Date(dob);
+            var currentDate = new Date();
+            if (dobDate > currentDate || dobDate < new Date("01/01/1997") || dobDate > new Date("01/01/2000")) {
+                alert("Invalid Date of Birth.");
+                return false;
+            }
+
+            // CGPA validation
+            if (cgpa <= 3.90) {
+                alert("CGPA must be greater than 3.90 to apply for the scholarship.");
+                return false;
+            }
+
+            return true; // Form is valid
+        }
+    </script>
+</head>
+<body>
+    <h2>Scholarship Application Form</h2>
+    <form onsubmit="return validateForm()">
+        Student ID: <input type="text" id="studentId" required><br><br>
+        Full Name: <input type="text" id="fullName" required><br><br>
+        Email: <input type="email" id="email" required><br><br>
+        Phone No.: <input type="text" id="phoneNo" required><br><br>
+        Date of Birth: <input type="date" id="dob" required><br><br>
+        CGPA: <input type="number" step="0.01" id="cgpa" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

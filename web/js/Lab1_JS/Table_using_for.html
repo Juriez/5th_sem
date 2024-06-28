@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generate Table</title>
+<style>
+    table {
+        border-collapse: collapse;
+    }
+    td {
+        border: 1px solid black;
+        padding: 3px;
+    }
+</style>
+</head>
+<body>
+
+<div id="container"></div>
+
+<script>
+
+function getLetter(index) {
+    const alphabet = '0ABCDEFGHI';
+    if (index <= 9) {
+        return alphabet[index];
+    } else {
+        const tensDigit = Math.floor(index / 10);
+        const onesDigit = index % 10;
+        const result = alphabet[tensDigit] + alphabet[onesDigit];
+        return result;
+    }
+}
+
+// Function to generate the table
+function generateTable() {
+    const table = document.createElement('table');
+    table.setAttribute('cellpadding', '3px');
+    table.setAttribute('cellspacing', '0px');
+
+    for (let i = 1; i <= 6; i++) {
+        const row = document.createElement('tr');
+
+        for (let j = 1; j <= 5; j++) {
+            const cell = document.createElement('td');
+            const letterI = getLetter(i);
+            const letterJ = getLetter(j);
+            const multiplication = i * j;
+            const result = `${letterI} * ${letterJ} = ${getLetter(multiplication)},${getLetter(i + j)}`;
+            cell.textContent = result;
+            row.appendChild(cell);
+        }
+
+
+        table.appendChild(row);
+    }
+
+    return table;
+}
+
+
+const container = document.getElementById('container');
+container.appendChild(generateTable());
+</script>
+
+</body>
+</html>

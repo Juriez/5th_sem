@@ -1,0 +1,16 @@
+#firstdiv {
+    background-color: lightblue;
+    border: 2px solid greenyellow;
+    border-radius: 15px;
+    /*padding-left: 30px;
+    padding-right: 50px;
+    padding-top: 60px;*/
+    padding: 30px;
+    text-align: center;
+    margin: 30px;
+    outline-style: dashed;
+    outline-width: thick;
+    outline-color:red ;
+    outline-offset: 10px;
+
+}

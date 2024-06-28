@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <style>
+        .my-text {
+            text-align: center;
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="myHeading">Heading 1</h1>
+    <p>This is a simple paragraph 1</p>
+    <p>This is a simple paragraph 2</p>
+    <p>This is a simple paragraph 3</p>
+    <p>This is a simple paragraph 4</p>
+    <div class="my-text" id="myDiv">A simple Text<h1>Hello Bangladesh 1</h1><h1>Hello Bangladesh 2</h1></div><button onclick="document.getElementById('myHeading').style.color='blue'">click me</button>
+    <br>
+    <a href="1st Class.html">first Class</a>
+    <button onclick="forward()" >forward</button>
+    <button onclick="back()" >back</button>
+</body>
+<script>
+     var x = document.getElementById("myHeading");
+     console.log(x);
+     var pars = document.getElementsByTagName("p");
+     console.log(pars);
+     for (var i = 0; i < pars.length; i++) {
+         console.log(pars[i]);
+     }
+     var items = document.getElementsByClassName("my-text");
+     console.log(items[0]);
+    
+    /* var elem = document.getElementById("myHeading");
+     elem.innerHTML = "New Heading from JavaScript !!!";
+     elem.style.color = "red";
+	*/
+
+    /* var nd = document.getElementById("myDiv");
+     console.log(nd.parentElement);
+     console.log(nd.childNodes);
+     console.log(nd.firstChild);
+     console.log(nd.lastChild);
+     console.log(nd.nextSibling);
+     console.log(document.documentElement);
+     console.log(document.body);
+     console.log(nd.nodeName);
+     console.log(nd.nodeType);
+     console.log(document.nodeType);
+     console.log(nd.firstChild.nodeType);
+	*/
+
+    /* var headingElement = document.createElement("h5");
+     var textNode = document.createTextNode("This is from JS !!!!");
+     headingElement.appendChild(textNode);
+     var nd = document.getElementById("myDiv");
+     nd.appendChild(headingElement);
+	*/
+
+   /*var headingElement = document.createElement("h5");
+     var textNode = document.createTextNode("This is from JS !!!!");
+     headingElement.appendChild(textNode);
+     var nd = document.getElementById("myDiv");
+     nd.insertBefore(headingElement,nd.firstChild);
+     nd.insertBefore(headingElement,nd.firstChild.nextSibling);
+	*/
+   //  document.getElementById("myHeading").remove(); 
+
+
+     var headingElement = document.createElement("h5");
+     var textNode = document.createTextNode("New Heading 5 from JS !!!!");
+     headingElement.appendChild(textNode);
+     document.getElementById("myHeading").replaceWith(headingElement);
+
+
+    
+	window.document.write("<p> height:" + window.innerHeight + ", width: " + window.innerWidth + "</p>");
+    
+	
+	 window.open();
+    // window.close();
+
+	
+    document.write(window.location.href);
+    document.write(window.location.pathname);
+
+    function back() {
+        window.history.back();
+    }
+    function forward() {
+        window.history.forward();
+    }
+
+
+</script>
+
+</html>

@@ -1,0 +1,15 @@
+TRANS:T1
+DATA:X,Y,Z
+SCHEDULE:
+T1:R(X);
+T1:W(X);
+T1:R(Y);
+T1:W(Y);
+T1:R(X);
+T1:R(Z);
+T1:W(Z);
+T1:R(Z);
+T1:W(Z);
+T1:W(X);
+T1:R(X);
+T1:W(X);

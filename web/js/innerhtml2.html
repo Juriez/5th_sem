@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> What can JS do? </h2>
+        <p> In this case JS can change the value of the source attribute of an image.</p>
+        <button onclick="document.getElementById('myimage').src='bulbon.gif'"> Turn on the light </button>
+        <img id="myimage" src="bulboff.jpeg" style="width: 100px;">
+        <button onclick="document.getElementById('myimage').src='bulboff.jpeg'"> Turn off the light </button>
+
+        
+        <h2> What can JS do? </h2>
+        <p> js can hide element of html. Lets see the procedure.</p>
+        
+        <p id="hide">This text will be hided.</p>
+       
+        <button type="button" onclick="document.getElementById('hide').style.display='none'">Click me</button>
+        
+       <!-- <button type="button" onclick="document.getElementById('hide').style.display='none'">Click Me!</button>-->
+       <!--Show hiden data-->
+       <p>now show the hiden data</p>
+       <button type="button" onclick="document.getElementById('hide').style.display='block'">Click me</button>
+
+
+
+    </body>
+</html>

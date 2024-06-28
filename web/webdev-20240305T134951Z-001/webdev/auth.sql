@@ -1,0 +1,9 @@
+CREATE DATABASE test;
+
+USE test;
+CREATE TABLE members ( id INT(6) UNSIGNED PRIMARY KEY, username VARCHAR(30) NOT NULL, password VARCHAR(30) NOT NULL)
+
+INSERT INTO `members` VALUES (1, 'john', '1234');
+
+
+
